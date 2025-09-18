@@ -4,9 +4,7 @@ Welcome to my **LeetCode Solutions Repository** 🎯
 Here I upload coding problems that I solve on **LeetCode**.
 
 ## 📂 Structure
-- Java → Arrays, Strings, LinkedList, DynamicProgramming  
-- Python → Coming soon  
-- SQL → Database query problems  
+- Java → Arrays, Strings, LinkedList, DynamicProgramming 
 
 ## ✅ Goal
 - Strengthen my **DSA concepts**  
