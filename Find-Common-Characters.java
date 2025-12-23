@@ -22,15 +22,20 @@
 22            }
 23        }
 24       ArrayList<String> final1 = new ArrayList<>();
-25       for( char c : arr ){
-26            map1.remove(c);
-27       }
+25    //    for( char c : arr ){
+26    //         map1.remove(c);
+27    //    }
 28       for(Map.Entry<Character,Integer> entry : map1.entrySet()){
-29            for(int i = 0; i < entry.getValue(); i++){
-30                final1.add(entry.getKey() + "");
-31            }
-32        }
-33        return final1;
-34    
-35    }
-36}
+29          if (!arr.contains(entry.getKey())){
+30            for( int i=1;i<=entry.getValue();i++){
+31                final1.add(entry.getKey()+"");
+32            }
+33          }
+34            // for(int i = 0; i < entry.getValue(); i++){
+35            //     final1.add(entry.getKey() + "");
+36            // }
+37        }
+38        return final1;
+39    
+40    }
+41}
