@@ -8,7 +8,8 @@
 8            }
 9        }
 10        // String[] array = list.toArray(String[]::new);
-11        String [] newarr = arr.toArray(String[]::new);
-12        return newarr;
-13    }
-14}
+11        // String [] newarr = arr.toArray(String[]::new);
+12        // return newarr;
+13        return arr.toArray(new String[0]);
+14    }
+15}
