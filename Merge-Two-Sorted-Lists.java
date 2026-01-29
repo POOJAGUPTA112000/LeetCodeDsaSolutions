@@ -10,26 +10,28 @@
 10 */
 11class Solution {
 12    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-13        ListNode list = new ListNode();
-14        ListNode temp =list;
-15        ListNode head1 = list1;
-16        ListNode head2 = list2;
-17        while(head1!=null && head2!=null){
-18            if(head1.val<=head2.val){
-19                temp.next = head1;
-20                head1 = head1.next;
-21            }else{
-22                temp.next = head2;
-23                head2 = head2.next;
-24            }
-25            temp=temp.next;
-26        }
-27        if(head1!=null){
-28            temp.next=head1;
-29        }
-30        if(head2!=null){
-31            temp.next=head2;
-32        }
-33        return list.next;
+13    ListNode list =new ListNode();
+14    ListNode temp = list;
+15    ListNode l1=list1;
+16    ListNode l2=list2;
+17    while(l1!=null && l2!=null){
+18        if(l1.val<l2.val){
+19            temp.next=l1;
+20            l1=l1.next;
+21        }else{
+22            temp.next=l2;
+23            l2=l2.next;
+24        }
+25        temp=temp.next;
+26    }
+27    if(l1!=null){
+28        temp.next=l1;
+29        temp=temp.next;
+30    }
+31    if(l2!=null){
+32        temp.next=l2;
+33        temp=temp.next;
 34    }
-35}
+35    return list.next;
+36    }
+37}
