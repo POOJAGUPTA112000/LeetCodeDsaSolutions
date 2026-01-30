@@ -1,37 +1,37 @@
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode middleNode(ListNode head) {
-        return findSize(head);
-        
-    }
-   
-    public ListNode findSize(ListNode head){
-        int count=1;
-        ListNode temp = head;
-        while(temp!=null){
-            temp=temp.next;
-            count++;
-        }
-        if(count%2==0){
-            count= count/2;
-        }else{
-        count=(count/2)+1;
-        }
-        temp=head;
-        while(count>1){
-            temp=temp.next;
-            count--;
-        }
-        return temp;
-    }
-
-}
+1/**
+2 * Definition for singly-linked list.
+3 * public class ListNode {
+4 *     int val;
+5 *     ListNode next;
+6 *     ListNode() {}
+7 *     ListNode(int val) { this.val = val; }
+8 *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+9 * }
+10 */
+11class Solution {
+12    public ListNode middleNode(ListNode head) {
+13        return findSize(head);
+14        
+15    }
+16   
+17    public ListNode findSize(ListNode head){
+18        int count=1;
+19        ListNode temp = head;
+20        while(temp!=null){
+21            temp=temp.next;
+22            count++;
+23        }
+24        if(count%2==0){
+25            count= count/2;
+26        }else{
+27        count=(count/2)+1;
+28        }
+29        temp=head;
+30        while(count>1){
+31            temp=temp.next;
+32            count--;
+33        }
+34        return temp;
+35    }
+36
+37}
