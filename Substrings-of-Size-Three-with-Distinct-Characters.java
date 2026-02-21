@@ -6,7 +6,7 @@
 6        int count=0;
 7        for( int i=0;i<=s.length()-3;i++){
 8            String str =s.substring(i,i+3);
-9            System.out.println(str);
+9            // System.out.println(str);
 10            HashMap<Character,Integer> map=new HashMap<>();
 11            for(char c : str.toCharArray()){
 12                if(map.containsKey(c)){
